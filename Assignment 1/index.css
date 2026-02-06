@@ -1,0 +1,49 @@
+ * {
+            box-sizing: border-box;/*make the layout of the page as a border-box */
+        }
+
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+
+        /* Container helps limit width on large screens but stays flexible */
+        .container {
+            width: 100%; /*makes sure that the elements doesnt overflow when the screen width changes*/
+            max-width: 600px; /* Limits size on desktop */
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+    
+        }
+
+        h1 {
+            color: #333;
+            font-size: 1.8rem;
+        }
+
+        /* 2. Flexible Widths: Using 100% so it fills the container */
+        input {
+            width: 100%; /*makes sure that the elements doesnt overflow when the screen width changes*/
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%; /* Makes the button easy to tap on mobile */
+            padding: 12px;
+            background-color: #007BFF;
+            color: white;
+            border-radius:4px;
+            font-size: 1rem;
+        }
+
+        p {
+            color: #666;
+            margin-top: 20px;
+        }
