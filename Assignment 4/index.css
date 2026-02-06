@@ -1,0 +1,34 @@
+/* 1. DEFAULT (Mobile) */
+        body {
+            background-color:blueviolet;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;/* centers the text*/
+            margin: 0;
+            transition: background-color 0.5s ease; /* Makes the color change smooth */
+        }
+
+        .status-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* 2. TABLET (Screens wider than 600px) */
+        @media (min-width: 600px) {
+            body {
+                background-color: goldenrod;
+            }
+        
+        }
+
+        /* 3. DESKTOP (Screens wider than 1024px) */
+        @media (min-width: 1024px) {
+            body {
+                background-color: lightgreen;
+            }
+    
+        }
