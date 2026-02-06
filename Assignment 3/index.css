@@ -1,0 +1,28 @@
+* {
+            box-sizing: border-box; /*make the layout of the page as a border-box */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        .gallery-container {
+            display: grid;
+            /* THE MAGIC LINE: */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));/*if the width is above 250, one column comes and if the width
+                                                                        is above 550, 2 columns comes up and so on*/
+            gap: 20px;
+            width: 100%;
+        }
+
+        .product-card {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 12px;
+            color: #333;
+        }
+
